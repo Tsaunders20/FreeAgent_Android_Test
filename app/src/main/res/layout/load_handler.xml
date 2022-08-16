@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <!-- android:background="@color/freeagentblue" originally was going to make the background blue, but wanted the logo in there.-->
+
+    <ImageView
+        android:id="@+id/frontLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/freeagenttrans" />
+    <ProgressBar
+        android:layout_below="@+id/frontLogo"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading Currencies Data"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>
